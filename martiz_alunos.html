@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Alunos</title>
+</head>
+<body>
+    <script>
+    // Pedir o nome de três alunos e duas notas desses alunos, calculando a média.
+
+        let notas [[],[],[]]
+        for(let i = 0; i < notas.length; i++){
+            notas[i][0] = prompt("Digite o nome do Aluno:"); //acessa local [0][0] primeira coluna e linha
+            notas[i][1] = Number(prompt("Digite a Primeira Nota:")); //acessa local [0][1] primeira linha e segunda coluna
+            notas[i][2] = Number(prompt("Digite a Segunda Nota:")); // acessa local [0][2] primeira linha e terceira coluna
+            notas[i][3] = (notas[i][1] + notas [i][2])/2; // acessa local [0][3] primeira linha e quarta coluna da média
+            console.log(notas[i]); // mostra a média por linha, mostrando por linha aparecem todos os itens da coluna
+        }
+
+    //For para imprimir item por item.
+
+        for(let linhas = 0; linhas < notas.length; linhas++){ // primeiro for vai percorrer as linhas
+            for(let colunas = 0; colunas < notas[linhas].length; colunas++){ // segundo for vai percorrer as colunas
+                console.log(notas[linha][coluna]);
+            }
+        }
+
+    </script>
+</body>
+</html>
